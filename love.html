@@ -1,0 +1,69 @@
+<!DOCTYPE html">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>网页</title>
+    <style type="text/css">
+        /*存放元素的区域*/
+        html,body{
+                    height:100%;
+                }
+        .content{/*存放元素的区域*/
+        position:relative;
+        width:200px;
+        height:200px;
+        background-color: #368;
+        
+        
+        margin:auto;
+        
+        }
+        
+        .love{
+        position:relative;
+            width:200px;
+            height:180px;
+            background: silver;
+        }
+        
+        .love .left{
+        position:absolute;
+        left:32px;
+            width:100px;
+            height:150px;
+            background: red;
+            border-radius:50px 50px 0 0;
+            /* 对应的长度 得出弧度*/
+            transform:rotate(-45deg);/*css3 形变,逆时针旋转45度*/
+            
+        }
+            
+            .love .right{
+        position:absolute;
+        left:68px;
+            width:100px;
+            height:150px;
+            background: red;
+            border-radius:50px 50px 0 0;
+            /* 对应的长度 得出弧度*/
+            transform:rotate(45deg);/*css3 形变,逆时针旋转45度*/    
+        }
+        .love .left,.love .right{
+        
+        }
+        
+    </style>
+</head>
+<body>
+    <!--  -->
+        <div class=‘content‘>
+            <div class=‘love‘>
+                <div class=‘left‘></div>
+                <div class=‘right‘></div>
+            </div>
+        </div>
+        
+        
+        
+</body>
+</html>
